@@ -1,12 +1,11 @@
 ---
-title: Primavera nómade
+title: Printemps nomade
 layout: post
 permalink: works/nomade
 img: nomade.jpg
 img_quantity: 3
-material: "Acrílico sobre lienzo, velcro, lana, fibra acrílica"
+material: Acrylique sur toile, velcro, laine, fibre acrylique
 size: 100cm x 100cm
 
 ---
 
-Esta pieza es intercambiable, de allí lo nómade: pedazos de abrojo adheridos al lienzo permiten cambiar los colores de lugar, según los antojos y el humor del día.

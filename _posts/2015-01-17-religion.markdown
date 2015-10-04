@@ -4,7 +4,7 @@ layout: post
 permalink : works/religion
 img: religion.jpg
 img_quantity: 3
-material: Acrílico sobre lienzo, fibra acrílica
+material: Acrylique sur toile, fibre acrylique
 size: 100cm x 100cm
 text:
 

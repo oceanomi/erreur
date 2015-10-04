@@ -10,7 +10,7 @@
           <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
                   <div class="modal-body">
-                      <a href="{{ site.baseurl }}index.html#{{ page.img | replace:'.jpg','' }}"<button type="button" class="btn btn-default pull-right">Volver</button></a>
+                      <a href="{{ site.baseurl }}index.html#{{ page.img | replace:'.jpg','' }}"<button type="button" class="btn btn-default pull-right">Retour</button></a>
                       <h2>{{ page.title }}</h2>
                       <hr class="star-primary">
                       <img src="{{ site.baseurl }}img/works/{{ page.img }}" class="img-responsive" alt="{{ page.title }}">
@@ -25,18 +25,18 @@
                           <li><strong>
                             {% assign m = page.date | date: "%-m" %}
                             {% case m %}
-                              {% when '1' %}Enero
-                              {% when '2' %}Febrero
-                              {% when '3' %}Marzo
-                              {% when '4' %}Abril
-                              {% when '5' %}Mayo
-                              {% when '6' %}Junio
-                              {% when '7' %}Julio
-                              {% when '8' %}Agosto
-                              {% when '9' %}Septiembre
-                              {% when '10' %}Octubre
-                              {% when '11' %}Noviembre
-                              {% when '12' %}Diciembre
+                              {% when '1' %}Janvier
+                              {% when '2' %}Février
+                              {% when '3' %}Mars
+                              {% when '4' %}Avril
+                              {% when '5' %}Mai
+                              {% when '6' %}Juin
+                              {% when '7' %}Juillet
+                              {% when '8' %}Août
+                              {% when '9' %}Septembre
+                              {% when '10' %}Octobre
+                              {% when '11' %}Novembre
+                              {% when '12' %}Décembre
                             {% endcase %}
                             {{ page.date | date: "%Y" }}</strong>
                           </li>
@@ -46,7 +46,7 @@
                           <img src="{{ site.baseurl }}img/works/{{ page.img | replace:'.jpg','' }}{{ index }}.jpg" class="img-responsive" alt="{{ page.title }}">
                         {% endfor %}
                       {% endif %}
-                      <a href="{{ site.baseurl }}#{{ page.img | replace:'.jpg','' }}"<button type="button" class="btn btn-default">Volver</button></a>
+                      <a href="{{ site.baseurl }}#{{ page.img | replace:'.jpg','' }}"<button type="button" class="btn btn-default">Retour</button></a>
                   </div>
               </div>
           </div>

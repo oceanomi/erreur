@@ -1,10 +1,10 @@
 ---
-title: Sin título
+title: Sans títle
 layout: post
 permalink: works/verde
 img: verde.jpg
 img_quantity: 2
-material: Acrílico sobre lienzo, fibra acrílica, alambre
+material: Acrylique sur toile, fibre acrylique, fil
 size: 100cm x 100cm
 
 ---
