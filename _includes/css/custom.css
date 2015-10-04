@@ -200,6 +200,10 @@ header {
     /* -o-background-size: cover; */
 }
 
+header .language {
+    padding-top: 10px;
+}
+
 header .intro-text {
     padding-top: 80px;
     padding-bottom: 80px;
