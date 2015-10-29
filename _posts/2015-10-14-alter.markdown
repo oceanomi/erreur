@@ -1,0 +1,10 @@
+---
+title: Alter ego
+layout: post
+permalink: works/alter
+img: alter.jpg
+img_quantity: 5
+material: Acrylique sur toile, métal, fil d'acier, ruban adhésif
+size: 50cm x 50cm
+
+---
