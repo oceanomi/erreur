@@ -1,5 +1,5 @@
 ---
-title: Sans títle
+title: Sans titre
 layout: post
 permalink: works/verde
 img: verde.jpg
