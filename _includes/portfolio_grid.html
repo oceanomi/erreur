@@ -3,16 +3,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                  <h3> class="thin">MORTAL. IMPARFAITE. AVEC DES DOUTES.</h3>
                     <p class="main-text">
-L’aiguille doit passer au dessous mais elle va au dessus; c’est mieux que de tourner plus loin à droite mais parfois on l’oublie. Elle cogne contre l’autre aiguille arrachant un peu de laine dans la maille contraire: c’est une bataille.<br>
-Le passage de la laine fait parfois un bruit métallique, mais en général, le travail est silencieux et régulier. Ce rythme répétitif, comme une marée, va à la recherche d’une erreur qui vient de l’extérieur.<br>
+L’aiguille doit passer au dessous mais elle va au dessus; c’est mieux que de tourner plus loin à droite mais parfois on l’oublie. Elle cogne contre l’autre aiguille arrachant un peu de laine dans la maille contraire: c’est une bataille.
+Le passage de la laine fait parfois un bruit métallique, mais en général, le travail est silencieux et régulier. Ce rythme répétitif, comme une marée, va à la recherche d’une erreur qui vient de l’extérieur.
 Aller jusqu’au bout de la rencontre. Reprendre si nécessaire. S'exhiber: comme moi maintenant devant vous. Se déshabiller, qui n’est pas comme se dénuder. Sortir se promener dans la campagne avec les chaussures mises aux mauvais pieds. Avoir chaud et soif et être dans le désert. Nager dans une baignoire. Garder le savon dans les yeux. Se réveiller à midi. Écouter le bourdonnement des moustiques toute la journée. Être le fantôme d’un autre. Prendre le chemin le plus court. Ne pas pouvoir s’échapper. Toujours être à l’heure. Craindre la lumière. Ne pas avoir d’enfant. En avoir. Voir une éclipse depuis la lune. Sortir du tunnel. Comprendre les cartes. Douleur corporelle et bonne mémoire. Ne pas pouvoir humer. Décalage horaire. 10000 kilomètres de distance. Baisser le regard. S’endormir dans la mer. Arriver à dire la vérité.
                 </div>
             </div>
             <div class="row">
             {% assign sortedPosts = site.posts | sort: 'date' %}
             {% for post in sortedPosts %}
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-8 portfolio-item">
                     <a id="{{  post.img | replace:'.jpg','' }}" href="{{ site.baseurl }}{{ post.permalink }}/index.html" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -22,11 +23,12 @@ Aller jusqu’au bout de la rencontre. Reprendre si nécessaire. S'exhiber: comm
                         <img src="img/works/{{ post.img | replace:'.jpg','-thumbnail.jpg' }}" class="img-responsive" alt="{{ post.title }}">
                     </a>
                 </div>
-                <div class="col-md-8 portfolio-item">
+                <div class="col-md-4 portfolio-item">
                     <div class="portfolio-caption">
                         <h4>{{ post.title }}</h4>
                         <p class="text-muted">{{ post.material }}</p>
                         <p class="text-muted"><strong>{{ post.size }}</strong></p>
+                        <p class="text-muted"><strong>{{ post.content | replace:'<!--break-->','...<!--break-->' | split:'<!--break-->' | first }}</strong></p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
