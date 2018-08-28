@@ -6,5 +6,6 @@ img: estanque.jpg
 img_quantity: 3
 material: Acrylique sur toile, laine, fibre acrylique, coton, rayonne raphia
 size: 100cm x 100cm
+series: Mortel. Imparfaite. Avec des doutes.
 
 ---

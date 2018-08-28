@@ -1,50 +1,28 @@
 <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                  <h3 class="thin">MORTAL. IMPARFAITE. AVEC DES DOUTES.</h3>
-                    <p class="main-text">
-L’aiguille doit passer au dessous mais elle va au dessus; c’est mieux que de tourner plus loin à droite mais parfois on l’oublie. Elle cogne contre l’autre aiguille arrachant un peu de laine dans la maille contraire: c’est une bataille.
-Le passage de la laine fait parfois un bruit métallique, mais en général, le travail est silencieux et régulier. Ce rythme répétitif, comme une marée, va à la recherche d’une erreur qui vient de l’extérieur.
-Aller jusqu’au bout de la rencontre. Reprendre si nécessaire. S'exhiber: comme moi maintenant devant vous. Se déshabiller, qui n’est pas comme se dénuder. Sortir se promener dans la campagne avec les chaussures mises aux mauvais pieds. Avoir chaud et soif et être dans le désert. Nager dans une baignoire. Garder le savon dans les yeux. Se réveiller à midi. Écouter le bourdonnement des moustiques toute la journée. Être le fantôme d’un autre. Prendre le chemin le plus court. Ne pas pouvoir s’échapper. Toujours être à l’heure. Craindre la lumière. Ne pas avoir d’enfant. En avoir. Voir une éclipse depuis la lune. Sortir du tunnel. Comprendre les cartes. Douleur corporelle et bonne mémoire. Ne pas pouvoir humer. Décalage horaire. 10000 kilomètres de distance. Baisser le regard. S’endormir dans la mer. Arriver à dire la vérité.
-                </div>
-            </div>
-            <div class="row">
-            {% assign sortedPosts = site.posts | sort: 'date' %}
-            {% for post in sortedPosts %}
-                <div class="col-md-8 portfolio-item">
-                    <a id="{{  post.img | replace:'.jpg','' }}" href="{{ site.baseurl }}{{ post.permalink }}.html" class="portfolio-link">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/works/{{ post.img | replace:'.jpg','-thumbnail.jpg' }}" class="img-responsive" alt="{{ post.title }}">
-                    </a>
-                </div>
-                <div class="col-md-4 portfolio-item">
-                    <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.material }}</p>
-                        <p class="text-muted"><strong>{{ post.size }}</strong></p>
-                        <p class="text-muted"><strong>{{ post.content | replace:'<!--break-->','...<!--break-->' | split:'<!--break-->' | first }}</strong></p>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            {% endfor %}
-            </div>
-            <div class="row">
-              <div class="col-md12">
-                <div class="portfolio-item">
-                  <div class="portfolio-caption">
-                    <h4>Fin et début</h4>
-                    <p class="text-muted">Acrylique, toile, coton, laine, fil, nylon, polyester, viscose</p>
-                    <p class="text-muted"><strong>280cm x 55cm</strong></p>
-                  </div>
-                </div>
-                <img width="100%" src="img/works/fin-y-principio.png" class="img-responsive" alt="Fin et début">
-              </div>
-            </div>
-        </div>
-    </section>
+<section class="portfolio">
+
+  <p class="main-text">Le tricot était un hobby tardif qu' une amie m'a apprit un après-midi à Istanbul. Je ne sortais pas de la forme rectangulaire et de deux variations de points. Les seules créations utilles que je sache tricoter sont des écharpes d'un style très amateur: pleines d'asymétrie et d'amour. Mais ils me commencé sur un travail marqué par des distractions et des omissions de façon ponctuelle, mais surtout, par le relief qui provoque des imperfections.</p>
+  <p class="main-text">Ensuite, je commençai à tricoter sans aucune retenue. Plus d’écharpes, mais des formes créées à partir d’un désir impatient. Je cherchais la grandeur dans les détails, l'inachevement comme norme, toutes pour atteindre le non-permanent, comme les laines, les fils, les câbles; comme les mains qui tricotent; comme la tête qui nomme; comme les yeux qui regardent les arbres à l’extérieur; comme tout ce qui mourra un de ces jours. Et ainsi naquit ERREUR, qui devint un exercice pour accepter la mortalité. Être comme une Pénélope en milieu de vie: qui tricote au présent; sans attendre le retour de rien ni de personne.</p>
+  <p class="main-text">Ma formation et mes années de travail dans le journalisme m'ont donné envie d'essayer des choses différentes: d'être correspondante de guerre, d'écrire un livre, éditer des blogs, de m'essayer au scénario, de travailler dans l'humanitaire, ou de réaliser un documentaire en Irak. Donc rien d' étonnant à ce que je me risque dans un nouveau domaine. L’expérience textile me ramène au présent, me donne une pause du futurisme; je respire et tricote. Je pense que nous devrions tous arrêter et essayer un peu. Tricoter en paix.</p>
+
+  <div class="grid">
+    {% assign sortedPosts = site.posts | sort: 'date' %}
+    {% for post in sortedPosts %}
+    <div class="portfolio-item">
+      <a id="{{  post.img | replace:'.jpg','' }}" href="/{{ post.permalink }}.html" class="portfolio-link">
+        <img src="img/works/{{ post.img | replace:'.jpg','-thumbnail.jpg' }}" class="img-responsive" alt="{{ post.title }}">
+      </a>
+    </div>
+    <div class="portfolio-caption">
+      <a id="{{  post.img | replace:'.jpg','' }}" href="/{{ post.permalink }}.html" class="portfolio-link">
+        <h4>{{ post.title }}</h4>
+        <p class="text-muted">{{ post.material }}</p>
+        <p class="text-muted"><strong>{{ post.size }}</strong></p>
+        <p class="text-muted"><strong>{{ post.content | replace:'<!--break-->','...<!--break-->' | split:'<!--break-->' | first }}</strong></p>
+        <p class="text-muted">Série: <strong>{{ post.series }}</strong></p>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <a href="/index.html#"><button>Retour</button></a>
+</section>

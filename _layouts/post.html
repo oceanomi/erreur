@@ -1,57 +1,29 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-
-    <body id="page-top" class="index">
-
-      <div class="container post">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                  <div class="modal-body">
-                      <a href="{{ site.baseurl }}index.html#{{ page.img | replace:'.jpg','' }}"<button type="button" class="btn btn-default pull-right">Retour</button></a>
-                      <h2>{{ page.title }}</h2>
-                      <hr class="star-primary">
-                      <img src="{{ site.baseurl }}img/works/{{ page.img }}" class="img-responsive" alt="{{ page.title }}">
-                      <p class="main-text">{{ page.content }}</p>
-                      <ul class="list-inline item-details">
-                          <li>
-                              <strong>{{ page.size }}</strong>
-                          </li>
-                          <li>
-                              {{ page.material }}
-                          </li>
-                          <li><strong>
-                            {% assign m = page.date | date: "%-m" %}
-                            {% case m %}
-                              {% when '1' %}Janvier
-                              {% when '2' %}Février
-                              {% when '3' %}Mars
-                              {% when '4' %}Avril
-                              {% when '5' %}Mai
-                              {% when '6' %}Juin
-                              {% when '7' %}Juillet
-                              {% when '8' %}Août
-                              {% when '9' %}Septembre
-                              {% when '10' %}Octobre
-                              {% when '11' %}Novembre
-                              {% when '12' %}Décembre
-                            {% endcase %}
-                            {{ page.date | date: "%Y" }}</strong>
-                          </li>
-                      </ul>
-                      {% if page.img_quantity %}
-                        {% for index in (1..page.img_quantity) %}
-                          <img src="{{ site.baseurl }}img/works/{{ page.img | replace:'.jpg','' }}{{ index }}.jpg" class="img-responsive" alt="{{ page.title }}">
-                        {% endfor %}
-                      {% endif %}
-                      <a href="{{ site.baseurl }}#{{ page.img | replace:'.jpg','' }}"<button type="button" class="btn btn-default">Retour</button></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-    {% include js.html %}
-
-    </body>
+  <body>
+    <div class="post">
+      <a href="/#{{ page.img | replace:'.jpg','' }}"><button>Retour</button></a>
+      <h2>{{ page.title }}</h2>
+      <ul class="item-details">
+        <li>
+          <strong>{{ page.size }}</strong>
+        </li>
+        <li>
+          {{ page.material }}
+        </li>
+        <li>
+          <strong>{{ page.date | date: "%Y" }}</strong>
+        </li>
+      </ul>
+      <img src="/img/works/{{ page.img }}" class="img-responsive" alt="{{ page.title }}">
+      <p class="main-text">{{ page.content }}</p>
+      {% if page.img_quantity %}
+        {% for index in (1..page.img_quantity) %}
+          <img src="/img/works/{{ page.img | replace:'.jpg','' }}{{ index }}.jpg" class="img-responsive" alt="{{ page.title }}">
+        {% endfor %}
+      {% endif %}
+      <a href="/#{{ page.img | replace:'.jpg','' }}"><button>Retour</button></a>
+    </div>
+  </body>
 </html>

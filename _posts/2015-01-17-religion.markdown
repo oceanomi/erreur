@@ -6,6 +6,6 @@ img: religion.jpg
 img_quantity: 3
 material: Acrylique sur toile, fibre acrylique
 size: 115 x 90cm
-text:
+series: Mortel. Imparfaite. Avec des doutes.
 
 ---

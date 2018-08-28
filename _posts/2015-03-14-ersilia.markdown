@@ -6,6 +6,7 @@ img: ersilia.jpg
 img_quantity: 3
 material: Acrylique sur toile, fibre acrylique, coton
 size: 3 x 90cm x 30cm
+series: Mortel. Imparfaite. Avec des doutes.
 
 ---
 

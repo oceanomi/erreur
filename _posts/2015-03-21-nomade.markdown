@@ -6,6 +6,7 @@ img: nomade.jpg
 img_quantity: 3
 material: Acrylique sur toile, velcro, laine, fibre acrylique
 size: 100cm x 100cm
+series: Mortel. Imparfaite. Avec des doutes.
 
 ---
 

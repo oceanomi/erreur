@@ -6,5 +6,6 @@ img: rabat.jpg
 img_quantity: 3
 material: Pigment en poudre, acrylique sur toile, fibre acrylique
 size: 100cm x 50cm
+series: Mortel. Imparfaite. Avec des doutes.
 
 ---
