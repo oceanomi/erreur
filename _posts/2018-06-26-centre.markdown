@@ -1,0 +1,12 @@
+---
+title: Centre
+layout: post
+permalink: works/centre
+img: centre.jpg
+img_quantity: 5
+material: Acrylique sur toile, fibre acrylique et coton.
+size: 60cm x 80cm
+series: Lieu
+
+---
+
