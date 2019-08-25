@@ -1,5 +1,5 @@
 ---
-title: Possibilités (tous)
+title: Possibilités (toutes)
 layout: post
 permalink: works/possibilites
 img: posibilidades.jpg
