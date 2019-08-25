@@ -1,0 +1,11 @@
+---
+title: Austral
+layout: post
+permalink: works/austral
+img: austral.jpg
+img_quantity: 4
+material: Acrylique sur toile, laine, fibre acrylique, coton.
+size: 80cm x 80cm
+series: Lieu
+
+---
