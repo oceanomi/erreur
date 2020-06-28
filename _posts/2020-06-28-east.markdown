@@ -1,0 +1,13 @@
+---
+title: À l'est de quelque part
+layout: post
+permalink: works/east
+img: east.jpg
+img_quantity: 5
+material: Acrylique sur toile, laine, fibre acrylique, coton.
+size: 80cm x 60cm
+series: Lieu
+
+---
+
+Inspiré par la Serbie.
